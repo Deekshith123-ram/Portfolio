@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dove: #b9c9d1;
+    --dove-deep: #8fa6b1;
+    --ink: #1f2b2e;
+    --felt-brown: #8a5c3b;
+    --felt-brown-dark: #5f4029;
+    --felt-cream: #eee1c8;
+    --felt-rose: #c07a5f;
+    --card: #f4efe4;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dove);
+    color: var(--ink);
+    font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    min-height: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Fraunces', Garamond, Georgia, serif;
+  }
+}
+
+/* Felt craft stitch effect for UI accents */
+.felt-stitch {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.45) 0px,
+    rgba(255, 255, 255, 0.45) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  height: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #b9c9d1;
+}
+::-webkit-scrollbar-thumb {
+  background: #8fa6b1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5f4029;
+}

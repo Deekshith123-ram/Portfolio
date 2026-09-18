@@ -1,0 +1,7 @@
+{
+  "name": "Deekshith S Portfolio",
+  "description": "Offline-capable interactive portfolio of Deekshith S featuring an animated tracking sloth companion, project domains, and PWA installation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

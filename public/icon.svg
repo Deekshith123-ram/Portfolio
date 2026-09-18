@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="feltGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#9d6d45" />
+      <stop offset="100%" stop-color="#7a4f30" />
+    </radialGradient>
+    <filter id="feltShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1f2b2e" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background circle/square -->
+  <rect width="512" height="512" rx="104" fill="#b9c9d1" />
+
+  <!-- Branch segment behind/under head -->
+  <path d="M 60 380 Q 256 360 452 380" stroke="#5f4029" stroke-width="28" stroke-linecap="round" fill="none" />
+  <path d="M 120 376 Q 200 370 280 378" stroke="#4a3120" stroke-width="6" stroke-linecap="round" fill="none" />
+
+  <!-- Arms holding branch -->
+  <ellipse cx="180" cy="370" rx="42" ry="24" transform="rotate(-25 180 370)" fill="#8a5c3b" />
+  <ellipse cx="332" cy="370" rx="42" ry="24" transform="rotate(25 332 370)" fill="#8a5c3b" />
+
+  <!-- Claws -->
+  <ellipse cx="160" cy="390" rx="10" ry="8" fill="#efe1c9" />
+  <ellipse cx="195" cy="395" rx="10" ry="8" fill="#efe1c9" />
+  <ellipse cx="317" cy="395" rx="10" ry="8" fill="#efe1c9" />
+  <ellipse cx="352" cy="390" rx="10" ry="8" fill="#efe1c9" />
+
+  <!-- Sloth Head -->
+  <g filter="url(#feltShadow)">
+    <!-- Fur tufts around head -->
+    <g stroke="#7a5030" stroke-width="5" stroke-linecap="round">
+      <line x1="256" y1="100" x2="256" y2="82" />
+      <line x1="298" y1="108" x2="308" y2="92" />
+      <line x1="337" y1="131" x2="352" y2="118" />
+      <line x1="368" y1="165" x2="388" y2="157" />
+      <line x1="386" y1="207" x2="408" y2="204" />
+      <line x1="389" y1="252" x2="412" y2="255" />
+      <line x1="375" y1="295" x2="396" y2="304" />
+      <line x1="347" y1="333" x2="364" y2="346" />
+      <line x1="256" y1="372" x2="256" y2="390" />
+      <line x1="214" y1="108" x2="204" y2="92" />
+      <line x1="175" y1="131" x2="160" y2="118" />
+      <line x1="144" y1="165" x2="124" y2="157" />
+      <line x1="126" y1="207" x2="104" y2="204" />
+      <line x1="123" y1="252" x2="100" y2="255" />
+      <line x1="137" y1="295" x2="116" y2="304" />
+      <line x1="165" y1="333" x2="148" y2="346" />
+    </g>
+
+    <!-- Head Base -->
+    <ellipse cx="256" cy="236" rx="136" ry="128" fill="url(#feltGrad)" />
+
+    <!-- Cream Face Patch -->
+    <ellipse cx="256" cy="250" rx="98" ry="90" fill="#eee1c8" />
+
+    <!-- Sloth Eye Masks -->
+    <ellipse cx="218" cy="236" rx="22" ry="30" transform="rotate(-8 218 236)" fill="#5f4029" />
+    <ellipse cx="294" cy="236" rx="22" ry="30" transform="rotate(8 294 236)" fill="#5f4029" />
+
+    <!-- Eyes -->
+    <ellipse cx="218" cy="239" rx="8" ry="10" fill="#201610" />
+    <ellipse cx="294" cy="239" rx="8" ry="10" fill="#201610" />
+    <!-- White Eye Catchlights -->
+    <ellipse cx="215" cy="236" rx="3" ry="3.5" fill="#ffffff" opacity="0.9" />
+    <ellipse cx="291" cy="236" rx="3" ry="3.5" fill="#ffffff" opacity="0.9" />
+
+    <!-- Snout / Nose -->
+    <ellipse cx="256" cy="276" rx="14" ry="10" fill="#3a281c" />
+
+    <!-- Sleepy Smile -->
+    <path d="M 238 298 Q 256 312 274 298" stroke="#3a281c" stroke-width="4" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
